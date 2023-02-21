@@ -6,6 +6,7 @@ import { postgraphile, makePluginHook }  from "postgraphile";
 import PgSimplifyInflectorPlugin from "@graphile-contrib/pg-simplify-inflector";
 import ConnectionFilterPlugin from "postgraphile-plugin-connection-filter";
 import PgPubsub from "@graphile/pg-pubsub";
+import * as FormantAuth from 'formant-authentication'
 
 const app = express();
 const pluginHook = makePluginHook([PgPubsub]);
@@ -13,7 +14,6 @@ const __dirname = path.dirname("/");
 
 console.log(__dirname)
 dotenv.config({ path: './.env' });
-
 
 app.use(
   express.urlencoded({
