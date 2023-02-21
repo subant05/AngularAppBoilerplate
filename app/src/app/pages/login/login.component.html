@@ -1,0 +1,17 @@
+<div class="login">
+    <mat-card class="login__card">
+                <div class="login__card--logo">
+                    <img src="/assets/brt-icon-sm.png"/>
+                </div>
+                <div>
+                    <mat-divider></mat-divider>
+
+                </div>
+                <mat-card-actions>
+                    <button mat-flat-button color="primary" *ngIf="isLoggedin === false" type="button" (click)="loginWithGoogle()">
+                        Login with Google
+                        <mat-icon matSuffix aria-label="Log into Google" >login</mat-icon>
+                    </button>                    
+                </mat-card-actions>
+    </mat-card>
+</div>
