@@ -1,0 +1,49 @@
+{
+  "name": "jupiter-reporting-dashboard",
+  "version": "1.0.0",
+  "description": "Blue River Reporting Dashboard",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "dev": "nodemon  --exec babel-node --ext js,graphql --max-old-space-size=8199 --experimental-modules --es-module-specifier-resolution=node index.js ",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm config set strict-ssl false && babel-node index.js"
+  },
+  "author": "Anthony Crawford",
+  "license": "ISC",
+  "dependencies": {
+    "@formant/data-sdk": "^0.0.117",
+    "@formant/ui-sdk": "^0.0.37",
+    "@graphile-contrib/pg-simplify-inflector": "^6.1.0",
+    "@graphile/pg-pubsub": "^4.13.0",
+    "apollo-server": "^3.11.1",
+    "apollo-server-express": "^3.11.1",
+    "babel-cli": "^6.26.0",
+    "babel-node": "^0.0.1-security",
+    "babel-plugin-syntax-async-generators": "^6.13.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.7",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "fetch": "^1.1.0",
+    "graphql": "^15.8.0",
+    "graphql-tools": "^8.3.16",
+    "jsonwebtoken": "^9.0.0",
+    "moment": "^2.29.4",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.6.9",
+    "nodemon": "^2.0.20",
+    "path": "^0.12.7",
+    "pg": "^8.9.0",
+    "postgraphile": "^4.13.0",
+    "postgraphile-plugin-connection-filter": "^2.3.0",
+    "process": "^0.11.10",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "db-migrate": "^0.11.12",
+    "db-migrate-pg": "^1.2.2"
+  }
+}
