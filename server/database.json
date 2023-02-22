@@ -1,7 +1,7 @@
 {
   "dev":{
       "driver":"pg"
-      , "host":"localhost"
-      , "database":""
+      , "host":{"ENV": "DATABASE_HOST"}
+      , "database":{"ENV": "DATABASE"}
   }
 }
