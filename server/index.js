@@ -15,6 +15,7 @@ const __dirname = path.dirname("/");
 console.log(__dirname)
 dotenv.config({ path: './.env' });
 
+await FormantAuth.connect()
 app.use(
   express.urlencoded({
     extended: true
