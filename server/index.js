@@ -11,7 +11,6 @@ const app = express();
 const pluginHook = makePluginHook([PgPubsub]);
 const __dirname = path.dirname("/");
 
-console.log(__dirname)
 dotenv.config({ path: './.env' });
 
 app.use(
