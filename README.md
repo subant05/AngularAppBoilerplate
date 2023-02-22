@@ -1,5 +1,11 @@
 # JupiterWebAppBoilerplate
 
+## Install Modules
+- $ cd app
+- $ npm install
+- $ cd ../server
+- $ npm install
+
 ## Create .env file
 - NODE_ENV=development
 - WEB_SERVER_DOMAIN=localhost
