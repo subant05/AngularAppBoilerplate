@@ -7,8 +7,10 @@
 - NODE_TLS_REJECT_UNAUTHORIZED=0
 - GOOGLE_AUTH_CLIENT_ID=< google auth client id>
 - DATABASE_URL=postgresql://localhost:5432/< name or database>
-- DEV_DATABASE_USER=postgres
-- DEV_DATABASE_PASSWORD=
+- DATABASE_HOST=localhost
+- DATABASE=< name of database>
+- DATABASE_USER=postgres
+- DATABASE_PASSWORD=
 - POSTGRAPHILE=postgresql://localhost:5432/< name or database>
 - ; FORMANT
 - FORMANT_API_URL=https://api.formant.io
