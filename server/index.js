@@ -50,8 +50,8 @@ app.use(express.static("./dist"));
 //   )
 // );
 
-app.get("*", function (req, res) {
-  res.sendFile(path.join(`${__dirname}dist/index.html`));
+app.all("/*", function (req, res) {
+  res.sendFile("index.html", { root: `.${__dirname}dist` });
 });
 
 app.listen(process.env.PORT || 4000);
