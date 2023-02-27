@@ -59,6 +59,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LayoutComponent } from './components/layout/layout.component';
+import { VehicleComponent } from './pages/vehicle/vehicle.component';
 
 const errorLink = onError(({ graphQLErrors, networkError, response }) => {
   // React only on graphql errors
@@ -118,6 +119,7 @@ function createDefaultApollo(httpLink: HttpLink): ApolloClientOptions<any> {
     LoginComponent,
     DashboardComponent,
     LayoutComponent,
+    VehicleComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
@@ -167,6 +169,7 @@ function createDefaultApollo(httpLink: HttpLink): ApolloClientOptions<any> {
     //
   ],
   providers: [
+    //Google Sign In
     {
       provide: 'SocialAuthServiceConfig',
       useValue: {
@@ -179,6 +182,7 @@ function createDefaultApollo(httpLink: HttpLink): ApolloClientOptions<any> {
         ],
       } as SocialAuthServiceConfig,
     },
+    // GraphQL
     {
       provide: APOLLO_OPTIONS,
       useFactory: createDefaultApollo,
